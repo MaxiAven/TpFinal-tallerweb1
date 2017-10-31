@@ -1,7 +1,7 @@
 <%@ include file="header.jsp" %>
 		<div class="container buscador">
 			<div class="col-lg-1"></div>
-			<form:form action="resultado" method="POST" modelAttribute="hospedaje">
+			<form:form action="listaResultado" method="GET">
     		<div class="col-lg-10">
     		 <div class="col-lg-7">
     		 	<input type="text" class="form-control input-lg" name="precio" id="precio" placeholder="Ingresa tu presupuesto (ej: $1000)">

@@ -8,8 +8,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-<c:forEach items ="${res}" var= "lista">
-		${lista}<br/>
+<c:forEach items ="${lista}" var= "lista">
+		${lista.getPrecio()}<br/>
+		${lista.getDescripcion()}<br/>
 </c:forEach>
 </body>
 </html>
