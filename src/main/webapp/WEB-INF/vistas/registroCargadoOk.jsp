@@ -1,12 +1,20 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
-<h1>El registro fue cargado con exito!!</h1>
-</body>
-</html>
+<%@ include file="header.jsp" %>
+<div class="container">
+
+	 	<div class="col-lg-4"></div>
+	 	<div class="col-lg-5">
+	 	<h1>Ruta cargada con éxito!</h1>
+		
+		<h2>Registre también su hospedaje!!</h2>
+		<div class="item">
+			<a href="/TpFinal-tallerweb1/cargarHospedaje" class="btn btn-info" role="button">Registrar Hospedaje</a>
+		</div><br>
+		<div class="item">
+		<a href="/TpFinal-tallerweb1/" class="btn btn-info" role="button">Volver al Home</a>
+		</div><br>
+		<div class="item">
+		<a href="/TpFinal-tallerweb1/misExperiencias" class="btn btn-info" role="button">Mis Experiencias</a>
+		</div></div><br>
+		<div class="col-lg-4"></div>
+
+</div>

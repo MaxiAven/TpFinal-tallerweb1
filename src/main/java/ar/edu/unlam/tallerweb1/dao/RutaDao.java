@@ -10,5 +10,7 @@ public interface RutaDao {
 	public void agregarRuta(Ruta r);
 	
 	public List<Hospedaje> buscarPorPrecioYDestino(float precio);
+	
+	Ruta consultarRutaPorId(Long id);
 
 }

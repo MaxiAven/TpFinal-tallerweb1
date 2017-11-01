@@ -39,10 +39,10 @@ public class ControladorIndex {
 	
 	@RequestMapping(path="/cargarRuta", method=RequestMethod.GET)
 	public ModelAndView cargaRuta(){
-		ModelMap modelo = new ModelMap();
-		Ruta ruta = new Ruta();
-		modelo.put("rutita",ruta);
-		return new ModelAndView("cargaRuta", modelo);
+		//ModelMap modelo = new ModelMap();
+		//Ruta ruta = new Ruta();
+		//modelo.put("rutita",ruta);
+		return new ModelAndView("cargaRuta");
 	}
 	
 	@RequestMapping(path = "/cargar-ruta", method = RequestMethod.POST)

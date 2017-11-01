@@ -9,6 +9,7 @@ import ar.edu.unlam.tallerweb1.modelo.Ruta;
 public interface ServicioRuta {
 	
 	public void agregarRuta(Ruta r);
+	Ruta consultarRutaPorId(Long id);
 	public List<Hospedaje> buscarPorPrecioYDestino(float precio);
 
 }

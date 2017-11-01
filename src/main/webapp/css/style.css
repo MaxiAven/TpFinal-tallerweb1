@@ -4,10 +4,12 @@
 
 
 body{
-	background-image:url("../img/ruta.jpg");
+	background-image:url("../img/ruta.jpg") ;
 	background-size:cover;
 	color:#fff;
 }
+
+
 
 .buscador{
 	

@@ -9,6 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import ar.edu.unlam.tallerweb1.dao.RutaDao;
 import ar.edu.unlam.tallerweb1.modelo.Hospedaje;
+
 import ar.edu.unlam.tallerweb1.modelo.Ruta;
 
 @Service("servicioRuta")
@@ -31,5 +32,10 @@ public class ServicioRutaImpl implements ServicioRuta{
 		return servicioRutaDao.buscarPorPrecioYDestino(precio);
 	}
 	
+	@Override
+	public Ruta consultarRutaPorId(Long id) {
+		// TODO Auto-generated method stub
+		return servicioRutaDao.consultarRutaPorId(id);
+	}
 	
 }
