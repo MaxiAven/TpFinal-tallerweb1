@@ -16,6 +16,8 @@ public class Hospedaje {
 	private String descripcion;
 	private String tipoHospedaje;
 	private float precio;
+	private int cantPersonas;
+
 	
 	@ManyToOne
 	@JoinColumn(name="idRuta")
@@ -51,6 +53,12 @@ public class Hospedaje {
 	}
 	public void setTipoHospedaje(String tipoHospedaje) {
 		this.tipoHospedaje = tipoHospedaje;
+	}
+	public int getCantPersonas() {
+		return cantPersonas;
+	}
+	public void setCantPersonas(int cantPersonas) {
+		this.cantPersonas = cantPersonas;
 	}
 	
 

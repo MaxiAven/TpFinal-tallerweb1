@@ -26,6 +26,11 @@
 					  <textarea class="form-control" rows="3" name="descripcion" id="descripcion"></textarea>
 				</div>
 				
+				<div class="form-group">
+					  <label for="cantPersonas">Cantidad de viajeros??:</label>
+					  <input type=number class="form-control"  name="cantPersonas" id="cantPersonas"></input>
+				</div>
+				
 				<button type="submit" class="btn btn-default">Cargar Hospedaje</button>
 	 	
 	 	</form:form>
