@@ -16,6 +16,7 @@ public class Ruta {
 	private Long idRuta;
 	private String salida;
 	private String llegada;
+	private Long gasto;
 	
 	@OneToMany
 	private List<Destino> destino;
@@ -53,6 +54,12 @@ public class Ruta {
 	}
 	public void setLlegada(String llegada) {
 		this.llegada = llegada;
+	}
+	public Long getGasto() {
+		return gasto;
+	}
+	public void setGasto(Long gasto) {
+		this.gasto = gasto;
 	}
 
 }
