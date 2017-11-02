@@ -56,7 +56,7 @@ public class ControladorIndex {
 			servicioRuta.agregarViaje(viaje);
 		
 		
-		return new ModelAndView("registroCargadoOk");
+		return new ModelAndView("cargarHospedaje");
 	}
 	
 	

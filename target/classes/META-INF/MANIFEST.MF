@@ -1,5 +1,9 @@
 Manifest-Version: 1.0
+<<<<<<< HEAD
 Built-By: Administrador
+=======
+Built-By: Billy the print
+>>>>>>> 855dd6c5519f0965abd56aafbf16ec2abfa0087a
 Build-Jdk: 1.8.0_144
 Created-By: Maven Integration for Eclipse
 
