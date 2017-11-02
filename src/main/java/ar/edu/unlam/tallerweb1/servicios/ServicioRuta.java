@@ -4,12 +4,13 @@ import java.util.List;
 
 import ar.edu.unlam.tallerweb1.modelo.Hospedaje;
 import ar.edu.unlam.tallerweb1.modelo.Ruta;
+import ar.edu.unlam.tallerweb1.modelo.Viaje;
 
 
 public interface ServicioRuta {
 	
-	public void agregarRuta(Ruta r);
+	public void agregarViaje(Viaje viaje);
 	Ruta consultarRutaPorId(Long id);
-	public List<Hospedaje> buscarPorPrecioYDestino(float precio);
+	public List<Viaje> buscarPorPrecioYDestino(float precio);
 
 }

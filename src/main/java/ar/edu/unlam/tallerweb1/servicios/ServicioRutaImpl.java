@@ -11,6 +11,7 @@ import ar.edu.unlam.tallerweb1.dao.RutaDao;
 import ar.edu.unlam.tallerweb1.modelo.Hospedaje;
 
 import ar.edu.unlam.tallerweb1.modelo.Ruta;
+import ar.edu.unlam.tallerweb1.modelo.Viaje;
 
 @Service("servicioRuta")
 @Transactional
@@ -21,20 +22,20 @@ public class ServicioRutaImpl implements ServicioRuta{
 	private RutaDao servicioRutaDao;
 
 	@Override
-	public void agregarRuta(Ruta r) {
+	public void agregarViaje(Viaje viaje) {
 		
-		servicioRutaDao.agregarRuta(r);
+		servicioRutaDao.agregarViaje(viaje);
 	}
 	
 	@Override
-	public List<Hospedaje> buscarPorPrecioYDestino(float precio) {
+	public List<Viaje> buscarPorPrecioYDestino(float precio) {
 		
 		return servicioRutaDao.buscarPorPrecioYDestino(precio);
 	}
 	
 	@Override
 	public Ruta consultarRutaPorId(Long id) {
-		// TODO Auto-generated method stub
+		
 		return servicioRutaDao.consultarRutaPorId(id);
 	}
 	

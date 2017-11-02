@@ -12,6 +12,7 @@ import org.springframework.stereotype.Repository;
 
 import ar.edu.unlam.tallerweb1.modelo.Hospedaje;
 import ar.edu.unlam.tallerweb1.modelo.Ruta;
+import ar.edu.unlam.tallerweb1.modelo.Viaje;
 
 @Repository("rutaDao")
 public class RutaDaoImpl implements RutaDao{
@@ -19,19 +20,19 @@ public class RutaDaoImpl implements RutaDao{
     private SessionFactory sessionFactory;
 
 	@Override
-	public void agregarRuta(Ruta r) {
+	public void agregarViaje(Viaje viaje) {
 		//final Session session = sessionFactory.getCurrentSession();
 		//session.persist(r);
-		sessionFactory.getCurrentSession().save(r);
+		sessionFactory.getCurrentSession().save(viaje);
 		
 		
 	}
 
 	@SuppressWarnings("unchecked")
 	@Override
-	public List<Hospedaje> buscarPorPrecioYDestino(float precio) {
+	public List<Viaje> buscarPorPrecioYDestino(float precio) {
 		final Session session = sessionFactory.getCurrentSession();
-		return session.createCriteria(Hospedaje.class).add(Restrictions.ge("precio", precio)).list();
+		return session.createCriteria(Viaje.class).add(Restrictions.eq("precio", precio)).list();
 	
 	
 	}

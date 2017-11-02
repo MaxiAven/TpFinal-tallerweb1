@@ -26,6 +26,12 @@ public class ServicioHospedajeImpl implements ServicioHospedaje{
 		servicioHospedajeDao.agregarHospedaje(hospedaje);
 	}
 	
+	@Override
+	public List<Hospedaje> listarTipoHospedaje() {
+		
+		return servicioHospedajeDao.listarTipoHospedaje();
+	}
+
 
 	
 }

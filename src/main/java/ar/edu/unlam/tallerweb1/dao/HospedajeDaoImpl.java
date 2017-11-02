@@ -6,8 +6,6 @@ import javax.inject.Inject;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-
-
 import org.springframework.stereotype.Repository;
 
 import ar.edu.unlam.tallerweb1.modelo.Hospedaje;
@@ -24,6 +22,15 @@ public class HospedajeDaoImpl implements HospedajeDao{
 		
 		
 	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<Hospedaje> listarTipoHospedaje() {
+		final Session session = sessionFactory.getCurrentSession();
+		return session.createCriteria(Hospedaje.class).list();
+	}
+	
+	
 
 
 }
