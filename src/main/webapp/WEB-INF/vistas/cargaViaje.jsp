@@ -25,13 +25,7 @@
    				 		<option value="ciudad">Ciudad</option>
    				 		<option value="otros">Otros</option>
    				 	</select>
-   				 <!-- <select class="form-control" name="tipoHospedaje" id="tipoHospedaje">
-   				 	<option value="">Seleccione una opción</option>
-   				 	<c:forEach items="${listaHospedaje}" var="lista">
-   				 		<option value="${lista.getTipoHospedaje()}">${lista.getTipoHospedaje()}</option>
-   				 	</c:forEach>
-   				 	
-   				 </select> -->
+   				
    			</div>
   			<div class="form-group">
    				 <label for="llegada">Tipo Hospedaje:</label>
