@@ -14,13 +14,15 @@ public class Viaje {
 	private Long idViaje;
 	private String salida;
 	private String llegada;
+	private String tipoDestino;
 	private String tipoHospedaje;
 	private int cantidadDias;
 	private int cantidadPersonas;
-    private float precio;
+	private int calificacion;
+	private float precio;
     private String descripcion;
     
-    
+   
 	@OneToOne
     private Hospedaje hospedaje;
     
@@ -42,6 +44,18 @@ public class Viaje {
 	public void setLlegada(String llegada) {
 		this.llegada = llegada;
 	}
+
+	public String getTipoDestino() {
+		return tipoDestino;
+	}
+	public void setTipoDestino(String tipoDestino) {
+		this.tipoDestino = tipoDestino;
+	}
+	public void setPrecio(float precio) {
+		this.precio = precio;
+	}
+	
+
 	public String getTipoHospedaje() {
 		return tipoHospedaje;
 	}
@@ -66,6 +80,15 @@ public class Viaje {
 	public void setPrecio(int precio) {
 		this.precio = precio;
 	}
+	
+	 
+    public int getCalificacion() {
+		return calificacion;
+	}
+	public void setCalificacion(int calificacion) {
+		this.calificacion = calificacion;
+	}
+    
 	
 	public String getDescripcion() {
 		return descripcion;

@@ -1,16 +1,32 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
-<c:forEach items ="${lista}" var= "lista">
-		${lista.getPrecio()}<br/>
-		${lista.getDescripcion()}<br/>
-</c:forEach>
+<%@ include file="header.jsp" %>
+	<div class="container">
+	<div class="col-md-1"></div>
+	<div class="col-md-10">
+	<div class="panel panel-default">
+	<div class="panel-heading"><h3>Elegí a donde ir</h3></div>
+	<div class="panel-body cargaRuta">
+	<table class="table table-condensed">
+		<tr>
+			<th>Destino</th>
+			<th>Cantidad de personas</th>
+			<th>Cantidad de Días</th>
+			<th>Descripción</th>
+			<th>Precio</th>
+		</tr>
+		<c:forEach items ="${lista}" var= "lista">
+		<tr>
+			<td>${lista.getSalida()} - ${lista.getLlegada()}</td>
+			<td>${lista.getCantidadPersonas()}</td>
+			<td>${lista.getCantidadDias()}</td>
+			<td>${lista.getDescripcion()}</td>
+			<td>${lista.getPrecio()}</td>
+		</tr>
+		</c:forEach>
+	</table>
+	</div>
+	</div>
+	</div>
+	<div class="col-md-1"></div>
+	</div>
 </body>
 </html>

@@ -10,7 +10,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Repository;
 
-import ar.edu.unlam.tallerweb1.modelo.Hospedaje;
+
 import ar.edu.unlam.tallerweb1.modelo.Ruta;
 import ar.edu.unlam.tallerweb1.modelo.Viaje;
 
@@ -32,9 +32,8 @@ public class RutaDaoImpl implements RutaDao{
 	@Override
 	public List<Viaje> buscarPorPrecioYDestino(float precio) {
 		final Session session = sessionFactory.getCurrentSession();
-		return session.createCriteria(Viaje.class).add(Restrictions.eq("precio", precio)).list();
-	
-	
+		return session.createCriteria(Viaje.class).add(Restrictions.le("precio", precio)).list();
+
 	}
 	
 	@Override

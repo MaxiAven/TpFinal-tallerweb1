@@ -2,7 +2,7 @@ package ar.edu.unlam.tallerweb1.dao;
 
 import java.util.List;
 
-import ar.edu.unlam.tallerweb1.modelo.Hospedaje;
+
 import ar.edu.unlam.tallerweb1.modelo.Ruta;
 import ar.edu.unlam.tallerweb1.modelo.Viaje;
 

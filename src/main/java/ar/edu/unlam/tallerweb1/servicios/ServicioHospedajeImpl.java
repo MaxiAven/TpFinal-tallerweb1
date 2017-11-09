@@ -7,7 +7,7 @@ import javax.inject.Inject;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import ar.edu.unlam.tallerweb1.dao.HospedajeDao;
+import ar.edu.unlam.tallerweb1.dao.ViajeDao;
 
 import ar.edu.unlam.tallerweb1.modelo.Hospedaje;
 
@@ -18,7 +18,7 @@ public class ServicioHospedajeImpl implements ServicioHospedaje{
 	
 
 	@Inject
-	private HospedajeDao servicioHospedajeDao;
+	private ViajeDao servicioHospedajeDao;
 
 	@Override
 	public void agregarHospedaje(Hospedaje hospedaje) {
